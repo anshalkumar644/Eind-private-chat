@@ -1,20 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Eind Web - made in India 🇮🇳</title>
+    <title>Eind Web - Simple & Secure</title>
     
     <!-- External Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
-    <!-- Babel for JSX -->
+    <!-- Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <!-- P2P & QR Tools -->
+    <!-- Tools -->
     <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
@@ -23,6 +22,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+<!-- FIX: overflow-hidden on body forces scroll only inside specific divs -->
 <body class="bg-gray-900 text-gray-100 h-[100dvh] w-full fixed inset-0 overflow-hidden touch-none">
     
     <!-- React App Mount Point -->
@@ -32,5 +32,6 @@
     <script type="text/babel" src="app.js"></script>
 </body>
 </html>
+
 
 
