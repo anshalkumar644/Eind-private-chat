@@ -3,41 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Eind Web - Made in India</title>
+    <title>Eind Web - Made In India 🇮🇳</title>
     
     <!-- External Libraries -->
-    
-    <!-- Tailwind CSS (Styling Framework) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- React & ReactDOM (Core Framework) -->
     <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     
-    <!-- Babel (To understand JSX in browser) -->
+    <!-- Babel for JSX -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     
-    <!-- PeerJS (P2P Connection) -->
+    <!-- P2P & QR Tools -->
     <script src="https://unpkg.com/peerjs@1.5.1/dist/peerjs.min.js"></script>
-    
-    <!-- QR Code Generator & Scanner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
-
-    <!-- Icons -->
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 
-    <!-- Custom CSS File -->
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-gray-100 overflow-hidden h-screen w-screen">
+<body class="bg-gray-900 text-gray-100 h-[100dvh] w-full fixed inset-0 overflow-hidden touch-none">
     
-    <!-- React Root Entry Point -->
-    <div id="root"></div>
+    <!-- React App Mount Point -->
+    <div id="root" class="h-full w-full"></div>
 
-    <!-- Main Logic File (React Code) -->
+    <!-- Main Application Logic -->
     <script type="text/babel" src="app.js"></script>
 </body>
 </html>
+
 
 
