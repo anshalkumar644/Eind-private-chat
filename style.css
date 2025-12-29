@@ -37,38 +37,15 @@
 /* Chat Background Pattern */
 .chat-bg {
     background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
-    background-repeat: repeat;
     opacity: 0.06;
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     pointer-events: none;
     z-index: 0;
 }
 
-/* QR Reader Video Adjustment */
+/* QR Reader Video Fix */
 #reader video {
     object-fit: cover;
     border-radius: 8px;
 }
-/* मोबाइल व्यू के लिए हेडर फिक्स */
-@media screen and (max-width: 768px) {
-    /* नीचे '.header' की जगह अपने HTML में जो हेडर की क्लास है वो लिखें */
-    .header, .navbar, .top-bar { 
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 10000;
-        display: flex !important;
-        background-color: #202c33; /* हेडर का बैकग्राउंड कलर */
-    }
-
-    /* चैट या वीडियो एरिया को थोड़ा नीचे खिसकाएं ताकि वो हेडर के पीछे न छिपे */
-    .main-content, .chat-area {
-        margin-top: 60px !important; 
-    }
-}
-
