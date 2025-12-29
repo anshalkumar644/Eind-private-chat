@@ -1,12 +1,11 @@
-/* Scrollbar Customization */
+/* Smooth Scrollbar */
 ::-webkit-scrollbar {
-    width: 6px !important;
-    height: 6px !important;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
@@ -14,27 +13,13 @@
 }
 
 /* App Theme Colors */
-.bg-app-dark {
-    background-color: #111b21;
-}
+.bg-app-dark { background-color: #111b21; }
+.bg-app-panel { background-color: #202c33; }
+.bg-app-teal { background-color: #00a884; }
+.bg-message-out { background-color: #005c4b; }
+.bg-message-in { background-color: #202c33; }
 
-.bg-app-panel {
-    background-color: #202c33;
-}
-
-.bg-app-teal {
-    background-color: #00a884;
-}
-
-.bg-message-out {
-    background-color: #005c4b;
-}
-
-.bg-message-in {
-    background-color: #202c33;
-}
-
-/* Chat Background Pattern */
+/* Chat Background */
 .chat-bg {
     background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
     opacity: 0.06;
@@ -44,8 +29,13 @@
     z-index: 0;
 }
 
-/* QR Reader Video Fix */
+/* Video Fit */
 #reader video {
     object-fit: cover;
     border-radius: 8px;
+}
+
+/* Fix for iPhone bottom bar */
+.pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
 }
